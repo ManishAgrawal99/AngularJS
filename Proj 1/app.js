@@ -4,8 +4,14 @@
 
     angular.module('myFirstApp', [])
 
-    .controller('MyFirstController', function(){
+    .controller('MyFirstController', function($scope){
+        $scope.name = "Manish";
 
+        $scope.sayHello = function(){
+            return "Hello ";
+        }
+
+        
     });
 
 })();
